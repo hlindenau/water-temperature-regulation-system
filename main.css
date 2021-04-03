@@ -1,0 +1,93 @@
+body {
+	margin: 0;
+	font-family: 'Lato', sans-serif;
+}
+
+body, html {
+	height: 100vh;
+}
+
+header {
+	display:flex;
+	justify-content: center;
+	background: #999;
+	color: white;
+	padding: 10px 15px 0px 10px;
+	font-family: 'Lato', sans-serif;
+	grid-area: header;
+}
+header h4{
+	font-family: 'Lato', sans-serif;
+}
+
+p{
+	font-family: 'Lato', sans-serif;
+}
+
+button{
+	font-family: 'Lato', sans-serif;
+}
+
+nav ul {
+	margin: 0;
+	display: inline;
+}
+
+nav ul li {
+	background: black;
+	color: white;
+	display: inline-block;
+	list-style-type: none;
+	margin: 0px;
+	padding: 5px 15px;
+}
+
+nav ul li a{
+	color: white;
+}
+
+.row{
+	clear:both;
+}
+
+.col{
+	background:#333;
+	border-radius:5px;
+	margin: 0.5%;
+	padding:10px 0.5%;
+	float: left;
+	width: 31%;
+	color:white;
+}
+
+footer {
+	clear:both;
+	font-family: 'Lato', sans-serif;
+	grid-area: footer;
+}
+
+img {
+	display: block;
+	grid-area: img;
+}
+
+#inputs{
+	display:block;
+	grid-area: inputs
+}
+
+#chartContainer{
+	display:block;
+	grid-area:chart;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 10% 60% 20% 10%;
+	grid-template-rows: 7vh 45vh 45vh 5vh;
+	grid-template-areas: 
+	  "header header header header"
+	  ". inputs img  ."
+	  ". chart chart ."
+	  "footer footer footer footer";
+}

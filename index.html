@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Regulacja temperatury wody - Podstawy Automatyki </title>
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<nav>
+				<h1>System regulacj temperatury wody </h1>
+			</nav>
+		</header>
+
+		<img src="Rownania.png" height="450" width="220" align="left"<\img>
+		<div id="inputs">
+			<p>Q<sub>1</sub>: <input id="Q-one"> l/s</p>
+			<p>Q<sub>2</sub>: <input id="Q-two"> l/s</p>
+			<p>T<sub>1</sub>: <input id="T-one"> &degC</p>
+			<p>T<sub>2</sub>: <input id="T-two"> &degC</p>
+			<p>T<sub>docelowa</sub>: <input id="T-required"> &degC</p>
+			<button id="button">Obliczenia</button>
+			<p id="simulate"></p>
+			<p id="tinf"></p>
+			<p id="tau"></p>
+			<button id="button2">Rysuj wykres</button>
+			<button id="button3">Rysuj wykres2</button>
+		</div>
+		<div id="chartContainer" style="height: 370px; width: 50%; margin: 0px 25% 0px 25%"></div>
+		<script src="script.js"></script>
+		<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+		
+	</div>
+		<p>Symulacja sterowania strumieniem Q<sub>2</sub> dla stanu początkowego: T<sub>1</sub> = 10 &degC, T<sub>2</sub> = 100 &degC, Q<sub>1</sub> = 10 l/s</p>
+		<div id="chartContainer2" style="height: 370px; width: 50%; margin: 0px 25% 0px 25%"></div>
+		<footer>@2020 - Hubert Lindenau </footer>
+</body>
+
+</html>
